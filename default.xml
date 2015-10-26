@@ -15,13 +15,11 @@
 <!-- We assume this manifest is in the same path as all the libraries. If you are
      copying this manifest as a template then you probably want the fetch path
      for this to be '../seL4' instead of '.' -->
-<remote name="seL4"
-fetch="."
-/>
+<remote name="seL4" fetch="../seL4"/>
 
-<default revision="master"
-remote="seL4"
-/>
+<remote name="pierzchalski" fetch="../pierzchalski"/>
+
+<default revision="master" remote="seL4"/>
 
 <project name="seL4.git" path="kernel"/>
 <project name="common-tool.git" path="tools/common"/>
@@ -42,7 +40,7 @@ remote="seL4"
 <project name="libsel4simple-stable.git" path="libs/libsel4simple-stable"/>
 <project name="libplatsupport.git" path="libs/libplatsupport"/>
 <project name="libutils.git" path="libs/libutils"/>
-<project name="sel4test.git" path="projects/sel4test">
+<project name="sel4test.git" path="projects/sel4test" remote="pierzchalski">
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Kbuild" dest="Kbuild"/>
     <linkfile src="Kconfig" dest="Kconfig"/>
