@@ -50,6 +50,7 @@
     <linkfile src="apps" dest="apps"/>
     <linkfile src="../../kernel/libsel4" dest="libs/libsel4"/>
 </project>
-<project name="rust.git" path="tools/rust" remote="rust-lang" revision="7beebbe56"/>
+<project name="rust.git" path="tools/rust" remote="rust-lang" 
+	revision="7beebbe564fa0c93c7c224c75c98a81c23ed42d9"/>
 
 </manifest>
