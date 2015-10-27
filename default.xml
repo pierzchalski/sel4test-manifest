@@ -19,6 +19,8 @@
 
 <remote name="pierzchalski" fetch="../pierzchalski"/>
 
+<remote name="rust-lang" fetch="../rust-lang"/>
+
 <default revision="master" remote="seL4"/>
 
 <project name="seL4.git" path="kernel"/>
@@ -48,5 +50,6 @@
     <linkfile src="apps" dest="apps"/>
     <linkfile src="../../kernel/libsel4" dest="libs/libsel4"/>
 </project>
+<project name="rust.git" path="tools/rust" remote="rust-lang" revision="7beebbe56"/>
 
 </manifest>
